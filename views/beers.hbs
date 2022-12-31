@@ -1,15 +1,17 @@
 <h1>Beers</h1>
 <div id="beers-from-api">
 <ul>
-    {{!-- {{#each beersFromApi}} --}}
     {{#each beersFromApi}}
   
         <div class="beer-info">
-            <ul>                
+            <ul>
+                <div id="beer-img">
+                    <img src={{this.image_url}}> 
+                </div>               
                 <li>{{this.name}}
-                <img src={{this.image_url}}>
                 <li>{{this.tagline}}</li>
                 <li>{{this.description}}</li>
+                
             </ul>
              
         </div>
